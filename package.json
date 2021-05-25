@@ -1,0 +1,23 @@
+{
+  "name": "fjordline-pricewatcher",
+  "description": "A very simplified price watcher for Fjordline's ferry services.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch:de": "ts-node main.ts --locale=de_eur",
+    "fetch:no": "ts-node main.ts --locale=no_nok",
+    "fetch:dk": "ts-node main.ts --locale=dk_dkk",
+    "fetch:all": "npm run fetch:de && npm run fetch:no && npm run fetch:dk"
+  },
+  "author": "René Calles",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "@types/yargs": "^17.0.0",
+    "pm2": "^4.5.6",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  }
+}

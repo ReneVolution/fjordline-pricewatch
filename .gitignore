@@ -1,0 +1,10 @@
+# Config file
+journeyConfig.json
+
+# build files
+dist
+
+# Don't track log data
+*.log
+
+node_modules
