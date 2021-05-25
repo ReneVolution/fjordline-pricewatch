@@ -2,11 +2,13 @@
 
 A very simplified price watcher for Fjordline's ferry services. It only considers the the main ferry price without taking into account the cabin setup or breakfast/dinner reservations.
 
-The pure intend for this was to find price changes when planning a trip to Norway with **Team Krivit International Fishing**. As of that, the price is calculated for our specific needs (6 ppl, 2 cars,…). See [Configuration](#configuration) for more details on how to tailor this to your needs.
+<br>
+<h3 style="color:red">Caution: This software will not be maintained as it had been written for one-off use</h3>
+<br>
+The pure intend for creating this software was to find price changes when planning a trip to Norway with **Team Krivit International Fishing**. Since he requirements for every trip are so unique (at least different dates, etc.), we have decided to not ship with any example configuration. Instead, please follow the [Bring your own Configuration](#bring-your-own-configuration) section for more info on how to tailor this to your needs.
 
 It can fetch the economy prices for the German, Norwegian and Danish API's (Spoiler: The norwegian is typically the cheapest option). These can be run individually using npm scripts or using PM2 in cron mode - which in turn will write 3 log files, one for each locale.
 
-<h3 style="color:red">Caution: This software will not be maintained as it had been written for one-off use</h3>
 
 ## Installation
 
@@ -55,4 +57,3 @@ Start the server via
 ```
 pm2 start
 ```
-
